@@ -1,5 +1,5 @@
 LOAD CSV WITH HEADERS FROM 'file:///part-00011-0fa4a426-0772-4690-b7b1-b0b59b4f7993-c000.csv' AS row
-CREATE (v:Video {
+CREATE (v:Video6 {
   video_ID: row.video_ID,
   uploader: row.uploader,
   age: toInteger(row.age),
@@ -13,7 +13,7 @@ CREATE (v:Video {
 });
 
 LOAD CSV WITH HEADERS FROM 'file:///part-00012-0fa4a426-0772-4690-b7b1-b0b59b4f7993-c000.csv' AS row
-CREATE (v:Video {
+CREATE (v:Video5 {
   video_ID: row.video_ID,
   uploader: row.uploader,
   age: toInteger(row.age),
@@ -26,8 +26,8 @@ CREATE (v:Video {
   related_IDs: split(row.related_IDs, ',')
 });
 
-LOAD CSV WITH HEADERS FROM 'file:///part-00013-0fa4a426-0772-4690-b7b1-b0b59b4f7993-c000' AS row
-CREATE (v:Video {
+LOAD CSV WITH HEADERS FROM 'file:///part-00013-0fa4a426-0772-4690-b7b1-b0b59b4f7993-c000.csv' AS row
+CREATE (v:Video4 {
   video_ID: row.video_ID,
   uploader: row.uploader,
   age: toInteger(row.age),
@@ -40,8 +40,8 @@ CREATE (v:Video {
   related_IDs: split(row.related_IDs, ',')
 });
 
-LOAD CSV WITH HEADERS FROM 'file:///part-00014-0fa4a426-0772-4690-b7b1-b0b59b4f7993-c000' AS row
-CREATE (v:Video {
+LOAD CSV WITH HEADERS FROM 'file:///part-00014-0fa4a426-0772-4690-b7b1-b0b59b4f7993-c000.csv' AS row
+CREATE (v:Video3 {
   video_ID: row.video_ID,
   uploader: row.uploader,
   age: toInteger(row.age),
@@ -54,8 +54,8 @@ CREATE (v:Video {
   related_IDs: split(row.related_IDs, ',')
 });
 
-LOAD CSV WITH HEADERS FROM 'file:///part-00015-0fa4a426-0772-4690-b7b1-b0b59b4f7993-c000' AS row
-CREATE (v:Video {
+LOAD CSV WITH HEADERS FROM 'file:///part-00015-0fa4a426-0772-4690-b7b1-b0b59b4f7993-c000.csv' AS row
+CREATE (v:Video2 {
   video_ID: row.video_ID,
   uploader: row.uploader,
   age: toInteger(row.age),
@@ -69,7 +69,7 @@ CREATE (v:Video {
 });
 
 LOAD CSV WITH HEADERS FROM 'file:///part-00016-0fa4a426-0772-4690-b7b1-b0b59b4f7993-c000.csv' AS row
-CREATE (v:Video {
+CREATE (v:Video1 {
   video_ID: row.video_ID,
   uploader: row.uploader,
   age: toInteger(row.age),
@@ -82,8 +82,8 @@ CREATE (v:Video {
   related_IDs: split(row.related_IDs, ',')
 });
 
-LOAD CSV WITH HEADERS FROM 'file:///part-00017-0fa4a426-0772-4690-b7b1-b0b59b4f7993-c000' AS row
-CREATE (v:Video {
+LOAD CSV WITH HEADERS FROM 'file:///part-00017-0fa4a426-0772-4690-b7b1-b0b59b4f7993-c000.csv' AS row
+CREATE (v:Video0 {
   video_ID: row.video_ID,
   uploader: row.uploader,
   age: toInteger(row.age),
