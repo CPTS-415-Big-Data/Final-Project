@@ -1,0 +1,12 @@
+CREATE (v:Video {
+  video_ID: row.video_ID,
+  uploader: row.uploader,
+  age: toInteger(row.age),
+  category: row.category,
+  length: toFloat(row.length),
+  views: toInteger(row.views),
+  rate: toFloat(row.rate),
+  ratings: toInteger(row.ratings),
+  comments: toInteger(row.comments),
+  related_IDs: split(row.related_IDs, ',')
+});
